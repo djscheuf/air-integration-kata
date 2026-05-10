@@ -1,0 +1,16 @@
+{
+  "name": "users-and-sessions-api",
+  "version": "1.0.0",
+  "description": "Users and Sessions API - Maps sessions to users and provides user-scoped data",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["users", "sessions", "cart", "api"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
