@@ -1,0 +1,67 @@
+[
+  {
+    "eventType": "VIEW",
+    "timestamp": 1620000000,
+    "sessionId": "session-123",
+    "properties": {
+      "productId": "prod-456",
+      "category": "electronics"
+    }
+  },
+  {
+    "eventType": "ADD_TO_CART",
+    "timestamp": 1620000030,
+    "sessionId": "session-123",
+    "properties": {
+      "productId": "prod-456",
+      "quantity": 1
+    }
+  },
+  {
+    "eventType": "VIEW",
+    "timestamp": 1620000060,
+    "sessionId": "session-123",
+    "properties": {
+      "productId": "prod-789",
+      "category": "clothing"
+    }
+  },
+  {
+    "eventType": "PURCHASE",
+    "timestamp": 1620000090,
+    "sessionId": "session-123",
+    "properties": {
+      "productId": "prod-456",
+      "quantity": 1,
+      "price": 99.99,
+      "currency": "USD"
+    }
+  },
+  {
+    "eventType": "VIEW",
+    "timestamp": 1620001000,
+    "sessionId": "session-456",
+    "properties": {
+      "productId": "prod-111",
+      "category": "books"
+    }
+  },
+  {
+    "eventType": "ADD_TO_CART",
+    "timestamp": 1620001030,
+    "sessionId": "session-456",
+    "properties": {
+      "productId": "prod-111",
+      "quantity": 2
+    }
+  },
+  {
+    "eventType": "REMOVE_FROM_CART",
+    "timestamp": 1620001060,
+    "sessionId": "session-456",
+    "properties": {
+      "productId": "prod-111",
+      "quantity": 1
+    }
+  }
+]

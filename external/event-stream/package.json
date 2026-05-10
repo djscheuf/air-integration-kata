@@ -1,0 +1,16 @@
+{
+  "name": "event-stream-api",
+  "version": "1.0.0",
+  "description": "Event Stream API - Tracks user events by session",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["events", "session", "stream"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
