@@ -4,7 +4,7 @@ const path = require('path');
 
 const router = express.Router();
 
-const eventsDataPath = path.join(__dirname, '../data/events.json');
+const eventsDataPath = path.join(__dirname, '../data/large-events.json');
 
 function loadEvents() {
   try {
