@@ -18,7 +18,28 @@ The server will start on port 3001 (or the port specified by the `PORT` environm
 
 ## API Endpoints
 
-### 1. Get User ID from Session
+### 1. List All Users
+```
+GET /users
+```
+
+Returns a list of all users in the system.
+
+**Example:**
+```bash
+curl http://localhost:3001/users
+```
+
+**Response:**
+```json
+{
+  "users": ["Alice", "Bob", "Charlie", "Diane", "Eve", "Frank", "Grace", "Henry", "Iris", "Jack", "Karen", "Leo", "Mia", "Noah", "Olivia", "Paul", "Quinn", "Rachel", "Sam", "Tina", "Uma", "Victor", "Walter", "Xander", "Yara"]
+}
+```
+
+---
+
+### 2. Get User ID from Session
 ```
 GET /users/session/{sessionId}
 ```
@@ -30,7 +51,7 @@ Returns the user ID associated with a session.
 curl http://localhost:3001/users/session/session-123
 ```
 
-### 2. Get All Sessions for a User
+### 3. Get All Sessions for a User
 ```
 GET /users/{userId}/sessions
 ```
@@ -39,10 +60,10 @@ Returns all session IDs associated with a user.
 
 **Example:**
 ```bash
-curl http://localhost:3001/users/user-789/sessions
+curl http://localhost:3001/users/Alice/sessions
 ```
 
-### 3. Get Cart History for a User
+### 4. Get Cart History for a User
 ```
 GET /users/{userId}/cart
 ```
@@ -51,10 +72,10 @@ Returns the complete cart history for a user.
 
 **Example:**
 ```bash
-curl http://localhost:3001/users/user-789/cart
+curl http://localhost:3001/users/Alice/cart
 ```
 
-### 4. Get Cart State at Specific Time
+### 5. Get Cart State at Specific Time
 ```
 GET /users/{userId}/cart?timestamp={timestamp}
 ```
@@ -63,16 +84,16 @@ Returns the cart state at a specific Unix timestamp.
 
 **Example:**
 ```bash
-curl http://localhost:3001/users/user-789/cart?timestamp=1620000060
+curl http://localhost:3001/users/Alice/cart?timestamp=1620000060
 ```
 
 ## Sample Data
 
 The API includes sample data for testing:
 
-- **Users:** user-789, user-456, user-123
-- **Sessions:** session-123, session-124, session-125, session-456, session-789
-- **Cart History:** Available for user-789 and user-456
+- **Users:** Alice, Bob, Charlie, Diane, Eve, Frank, Grace, Henry, Iris, Jack, Karen, Leo, Mia, Noah, Olivia, Paul, Quinn, Rachel, Sam, Tina, Uma, Victor, Walter, Xander, Yara (25 users total)
+- **Sessions:** session-001 through session-025 (25 sessions, one per user)
+- **Cart History:** Available for all users except Walter (who has an empty cart history)
 
 ## Project Structure
 

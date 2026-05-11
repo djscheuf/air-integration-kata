@@ -3,6 +3,11 @@ const { sessionToUserMap, userSessionsMap, cartHistoryMap } = require('./db');
 
 const router = express.Router();
 
+router.get('/users', (req, res) => {
+  const users = Object.keys(userSessionsMap);
+  res.json({ users });
+});
+
 router.get('/users/session/:sessionId', (req, res) => {
   const { sessionId } = req.params;
   const userId = sessionToUserMap[sessionId];
