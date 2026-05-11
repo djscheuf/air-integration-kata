@@ -16,7 +16,7 @@ Each week will target a specific part of the SDLC cycle, and a particular wrinkl
 
 ### Constraints:
 1. You will delete the implementation each week, and start fresh with a new approach.
-  - You may keep all skills, hooks, workflows, rules, orchestrators, and agent definitions. 
+> You may keep all skills, hooks, workflows, rules, orchestrators, and agent definitions. 
 2. You are not allowed to modify the mock APIs, or their data. 
 3. The goal of the exercise is to learn and improve your Agentic system, not to produce a perfect implementation.
 
