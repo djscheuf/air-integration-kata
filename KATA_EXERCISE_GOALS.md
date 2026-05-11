@@ -54,12 +54,13 @@ Guiding Questions:
 
 ### Week 4: Optimization
 - Ideally, you have a working, tested solution in place!
-- Is the existing solution optimized/effective? How do we check, and how do we tell the agent to optimize it?
+- How might your agentic system be optimized? 
 
 Guiding Questions:
-1. What's your heuristic for whether you need to optimize a given solution?
-2. How do you check those things? 
-3. Based on the exercises in this kata, how might we arm the agent to see it needs to optimize, and then both do so and prove it worked?
+1. What aspects of your agentic system contribute to implementation cost? 
+2. What are the bottlenecks in time? 
+3. What does the system expect of users in terms of experience or knowledge?
+4. How would you check improvements in those things? 
 
 ### Focus Areas
 The exercise prioritizes:
